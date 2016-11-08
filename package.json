@@ -1,0 +1,24 @@
+{
+  "name": "react-native-animated-steps",
+  "version": "1.0.0",
+  "description": "A component that helps you render 'cards' step by step with animations",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/archriss/react-native-animated-steps"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "animated",
+    "forms",
+    "steps",
+    "items",
+    "android",
+    "ios",
+    "simple",
+    "component"
+  ],
+  "author": "Archriss",
+  "license": "ISC"
+}
