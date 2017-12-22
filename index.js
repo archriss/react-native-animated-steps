@@ -7,7 +7,7 @@ import {
     Animated,
     Dimensions,
     InteractionManager,
-    BackAndroid
+    BackHandler
 } from 'react-native';
 
 export default class CardNavigation extends Component {
@@ -53,11 +53,11 @@ export default class CardNavigation extends Component {
             this.state.cardsPos.push(new Animated.Value(i === this.firstCard ? 0 : -this.deviceHeight));
         }
         // Android
-        BackAndroid.addEventListener('hardwareBackPress', this.androidBack);
+        BackHandler.addEventListener('hardwareBackPress', this.androidBack);
     }
 
     componentWillUnmount () {
-        BackAndroid.removeEventListener('hardwareBackPress', this.androidBack);
+        BackHandler.removeEventListener('hardwareBackPress', this.androidBack);
     }
 
     shouldComponentUpdate (nextProps, nextState) {
